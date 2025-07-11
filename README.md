@@ -1,8 +1,8 @@
-##📄 Document_Parse
+## 📄 Document_Parse
 
 An automated invoice extraction pipeline that connects to OneDrive, downloads PDF invoices, parses them using GPT via Azure OpenAI, and writes structured results into Excel.
 
-#⚙️ Features
+# ⚙️ Features
 
     🔐 Authenticates with Microsoft Graph to access OneDrive
 
@@ -16,7 +16,7 @@ An automated invoice extraction pipeline that connects to OneDrive, downloads PD
 
     ✅ Handles multiple invoices per file
 
-#🗂️ Folder Structure
+# 🗂️ Folder Structure
 
 Document_Parse/
 ├── routes/
@@ -42,7 +42,7 @@ Document_Parse/
 ├── package.json
 └── README.md
 
-#📥 .env Configuration
+# 📥 .env Configuration
 
 Create a .env file in the root directory with the following variables:
 YAML
@@ -59,7 +59,7 @@ AZURE_OPENAI_ENDPOINT=YOUR_AZURE_OPENAI_ENDPOINT
 AZURE_API_VERSION=YOUR_AZURE_API_VERSION
 AZURE_DEPLOYMENT_NAME=YOUR_AZURE_DEPLOYMENT_NAME
 
-#🚀 How to Run
+# 🚀 How to Run
 
     Install dependencies:
     Bash
@@ -79,7 +79,7 @@ HTTP
 
     POST http://localhost:5000/api/process-onedrive/extract
 
-#🧠 Fields Extracted via GPT
+# 🧠 Fields Extracted via GPT
 
 The pipeline is configured to extract the following structured fields from the invoices:
 JSON
@@ -118,7 +118,7 @@ JSON
   "overall_remark": ""
 }
 
-#📝 Notes
+# 📝 Notes
 
     If a file has already been processed, it will be skipped in future runs to avoid duplicate entries.
 
