@@ -18,6 +18,9 @@ An automated invoice extraction pipeline that connects to OneDrive, downloads PD
 
 # 🗂️ Folder Structure
 
+## 📁 Project Folder Structure
+
+```plaintext
 Document_Parse/
 ├── routes/
 │   ├── processRoute.js               # Route to fetch PDF metadata
