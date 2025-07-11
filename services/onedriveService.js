@@ -31,4 +31,7 @@ async function downloadFile(accessToken, fileId) {
   return stream; // You can pipe it to PDF parser
 }
 
-module.exports = { listPDFFiles, downloadFile };
+module.exports = {
+  listPDFFiles,
+  downloadFile,
+};

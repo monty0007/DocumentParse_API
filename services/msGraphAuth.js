@@ -1,4 +1,3 @@
-// services/msGraphAuth.js
 const { ClientSecretCredential } = require('@azure/identity');
 
 async function getAccessToken() {

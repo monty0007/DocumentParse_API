@@ -3,8 +3,9 @@ const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const processRoute = require('./routes/processRoute');
+const processAllExtractRoute = require('./routes/extractAllFromOneDrive');
 
-dotenv.config();
+require('dotenv').config({ quiet: true });
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -18,6 +19,7 @@ app.get('/', (req, res) => {
   
 
 app.use('/api/process-onedrive', processRoute);
+app.use('/api/process-onedrive/extract', processAllExtractRoute);
 
 app.listen(PORT, () => {
   console.log(`🚀 Server is running on http://localhost:${PORT}`);
